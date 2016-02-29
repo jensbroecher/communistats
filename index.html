@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Communistats</title>
+
+    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+
+    <link rel = "stylesheet" type = "text/css" href = "#" />
+    <!--Add your .css file-->
+
+
+
+    <style type="text/css">
+		body, html {
+
+		}
+		body {
+			background-image: url(mainbg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: black;
+			margin: 0px;
+			padding-top: 90px;
+		}
+		nav div {
+			text-indent: 10%;
+			color: white;
+			line-height: 200%;
+			font-family: sans-serif;
+			font-size: 22px;
+			border-radius: 6px;
+			background-color: orange;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			cursor: pointer;
+			border: 2px solid black;
+			transition: all 0.3s;
+			width: 0%;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+		nav div:hover {
+			border: 2px solid white;
+			-webkit-filter: brightness(1.2);
+		}
+		h1 {
+			position: absolute;
+			color: white;
+			font-weight: 400;
+			text-align: center;
+			font-family: sans-serif;
+			transition: all 0.3s;
+			margin-top: -150px;
+			transition: all 1s;
+			width: 100%;
+		}
+    </style>
+    <!--  Internal css link -->
+
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+$( document ).ready(function() {
+	setTimeout(function(){ 
+		document.getElementById("headline").style.marginTop = "-30px";
+	}, 2100);
+    setTimeout(function(){ 
+		document.getElementById("awesome").style.width = "75%";
+	}, 300);
+	 setTimeout(function(){ 
+		document.getElementById("verygood").style.width = "75%";
+	}, 600);
+	setTimeout(function(){ 
+		document.getElementById("good").style.width = "75%";
+	}, 900);
+	setTimeout(function(){ 
+		document.getElementById("ok").style.width = "75%";
+	}, 1200);
+	setTimeout(function(){ 
+		document.getElementById("soso").style.width = "75%";
+	}, 1500);
+	setTimeout(function(){ 
+		document.getElementById("terrible").style.width = "75%";
+	}, 1800);
+	
+});
+</script>
+
+</head>
+
+
+<body>
+
+<h1 id="headline">Wie war dein Tag <span id="username"></span>?</h1>
+
+<nav>
+<div style="background-color:#FFE162" id="awesome">Awesome</div>
+<div style="background-color:#FDD551" id="verygood">Sehr gut</div>
+<div style="background-color:#FFC43B" id="good">Gut</div>
+<div style="background-color:#FFBB31" id="ok">OK</div>
+<div style="background-color:#FFAE21" id="soso">Nicht der Hit</div>
+<div style="background-color:#FDA110" id="terrible">Schrecklich</div>
+</nav>
+	
+
+
+</body>
+</html>
